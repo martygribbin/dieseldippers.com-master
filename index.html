@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="keywords" content="red, diesel, dippers, customs, checkpoint, fuel, green." />
+    <meta name="google-site-verification" content="5pFHp5unQnEFtYD7lS0q3QtAvgXeaVD2cBbyfYuIWoY" />
+    <meta name="description" content="Dieseldippers.com is a website dedicated to highlighting traffic congestion caused by customs checkpoints." />
+    <meta property="og:title" content="Diesel Dippers" />
+    <meta property="og:type" content="cause" />
+    <meta property="og:url" content="http://www.dieseldippers.com/" />
+    <meta property="og:image" content="http://www.dieseldippers.com/favicon.gif" />
+    <meta property="og:site_name" content="DieselDippers.com" />
+    <meta property="fb:admins" content="592485830" />
+    
+    <title>DIESELDIPPERS.COM - HELPING YOU AVOID TRAFFIC CONGESTION</title>
+    
+    
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="shortcut icon" href="/favicon.gif" type="image/x-icon" /> 
+        
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="js/icons.js"></script>
+    <script type="text/javascript" src="js/formvalidate.js"></script>
+
+  </head>
+
+  <body onLoad="load()">
+  
+  
+  
+  <header>
+    <div id="logo">
+      <img src="images/DIESELDIPPERS_LOGO_6.png" alt="dieseldippers logo"/>
+    </div>
+
+    <nav>
+        <ul>
+        <li><a href="http://www.dieseldippers.com/">Home</a>   </li>
+        <li><a href="about.html">About</a> </li>
+        <li><a href="contact.html">Contact</a>  </li>
+        </ul>
+     </nav>
+  </header>
+  
+  
+  
+    <div id="map" style="position: absolute; top: 0; bottom: 0;left: 0; right: 0; z-index: -1;"></div>
+    
+    <div id="sidebar" style="width: 20%; height: 500px">
+  
+        <div id="addlocation"> 
+       
+            <form action="insert.php" method="post" id="myform"  name="myform" onsubmit="return validate_form ( );">
+
+              <h1>Add A Checkpoint</h1>
+
+              <label>Location</label>
+              <span class="small">e.g. Malone Road, Belfast, Antrim</span>
+              <input type="text" name="address" placeholder="e.g. Malone Road, Belfast, Antrim"  required/>
+
+
+              
+              <input type="submit" value="Add" />
+
+            </form>
+
+
+
+<div class="spacer"></div>
+
+
+
+</div>
+
+
+<div id="disclaimer">
+<p class="disclaimer"><a href="disclaimer.html">DISCLAIMER</a> </p>
+</div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-41396729-1', 'dieseldippers.com');
+  ga('send', 'pageview');
+
+</script>
+    
+  </body>
+
+</html>

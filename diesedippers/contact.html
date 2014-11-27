@@ -1,0 +1,101 @@
+<!DOCTYPE html >
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="google-site-verification" content="5pFHp5unQnEFtYD7lS0q3QtAvgXeaVD2cBbyfYuIWoY" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="description" content="Dieseldippers.com allows you to avoid traffic congestion by keeping you informed of customs checkpoints in Ireland" />
+    <title>DIESELDIPPERS.COM - Helping you avoid traffic congestion</title>
+
+  
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="shortcut icon" href="/favicon.gif" type="image/x-icon" /> 
+  
+  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script src="js/jquery.validate.js"></script>
+<script src="js/jquery.placeholder.js"></script>
+<script src="js/jquery.form.js"></script>
+
+<script>
+$(function(){
+$('#contact').validate({
+submitHandler: function(form) {
+    $(form).ajaxSubmit({
+    url: 'process.php',
+    success: function() {
+    $('#contact').hide();
+    $('#contact-form').append("<p class='thanks'>Thanks! Your request has been sent.</p>")
+    }
+    });
+    }
+});         
+});
+</script>
+
+
+  </head>
+
+  <body>
+  
+  
+  
+  <header>
+  <div id="logo">
+  <img src="images/DIESELDIPPERS_LOGO_6.png"/>
+  </div>
+ <nav>
+ 
+  
+<ul>
+<li><a href="http://www.dieseldippers.com/">Home</a>   </li>
+<li><a href="http://www.dieseldippers.com/about.html">About</a> </li>
+<li><a href="http://www.dieseldippers.com/contact.html">Contact</a>  </li>
+
+</ul>
+ 
+ </nav>
+  </header>
+  
+
+  
+  
+<div id="contact-form">	
+
+<form id="contact" method="post" action="">
+<fieldset>	
+
+<label for="name">Name </label>
+<input type="text" name="name" placeholder="Name" title="Enter your name" class="required">
+
+<label for="email">E-mail </label>
+<input type="email" name="email" placeholder="yourname@domain.com" title="Enter your e-mail address" class="required email">
+
+
+
+<label for="message">Query/Suggestion</label>
+<textarea name="message"></textarea>
+
+<input type="submit" name="submit" class="button" id="submit" value="Send" />
+
+</fieldset>
+</form>
+
+</div><!-- /end #contact-form -->
+
+<script src="js/modernizr-min.js"></script>
+<script>
+if (!Modernizr.input.placeholder){
+      $('input[placeholder], textarea[placeholder]').placeholder();
+}
+</script>
+    
+    
+
+
+
+
+    
+  </body>
+
+</html>
